@@ -1,0 +1,11 @@
+C:\Users\Admin\source\repos\DKTech_Shop\Shop.Common\bin\Debug\Shop.Common.dll.config
+C:\Users\Admin\source\repos\DKTech_Shop\Shop.Common\bin\Debug\Shop.Common.dll
+C:\Users\Admin\source\repos\DKTech_Shop\Shop.Common\bin\Debug\Shop.Common.pdb
+C:\Users\Admin\source\repos\DKTech_Shop\Shop.Common\bin\Debug\EntityFramework.dll
+C:\Users\Admin\source\repos\DKTech_Shop\Shop.Common\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\source\repos\DKTech_Shop\Shop.Common\bin\Debug\EntityFramework.xml
+C:\Users\Admin\source\repos\DKTech_Shop\Shop.Common\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\source\repos\DKTech_Shop\Shop.Common\obj\Debug\Shop.Common.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\DKTech_Shop\Shop.Common\obj\Debug\Shop.Common.csproj.CopyComplete
+C:\Users\Admin\source\repos\DKTech_Shop\Shop.Common\obj\Debug\Shop.Common.dll
+C:\Users\Admin\source\repos\DKTech_Shop\Shop.Common\obj\Debug\Shop.Common.pdb
