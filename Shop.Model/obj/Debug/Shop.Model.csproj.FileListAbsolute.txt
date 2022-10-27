@@ -9,3 +9,14 @@ C:\Users\Admin\source\repos\DKTech_Shop\Shop.Model\obj\Debug\Shop.Model.csproj.C
 C:\Users\Admin\source\repos\DKTech_Shop\Shop.Model\obj\Debug\Shop.Model.csproj.CopyComplete
 C:\Users\Admin\source\repos\DKTech_Shop\Shop.Model\obj\Debug\Shop.Model.dll
 C:\Users\Admin\source\repos\DKTech_Shop\Shop.Model\obj\Debug\Shop.Model.pdb
+C:\Users\Admin\Desktop\DKTech_Shop\DKTech_Shop\Shop.Model\bin\Debug\Shop.Model.dll.config
+C:\Users\Admin\Desktop\DKTech_Shop\DKTech_Shop\Shop.Model\bin\Debug\Shop.Model.dll
+C:\Users\Admin\Desktop\DKTech_Shop\DKTech_Shop\Shop.Model\bin\Debug\Shop.Model.pdb
+C:\Users\Admin\Desktop\DKTech_Shop\DKTech_Shop\Shop.Model\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\DKTech_Shop\DKTech_Shop\Shop.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\DKTech_Shop\DKTech_Shop\Shop.Model\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\DKTech_Shop\DKTech_Shop\Shop.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\DKTech_Shop\DKTech_Shop\Shop.Model\obj\Debug\Shop.Model.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\DKTech_Shop\DKTech_Shop\Shop.Model\obj\Debug\Shop.Model.csproj.CopyComplete
+C:\Users\Admin\Desktop\DKTech_Shop\DKTech_Shop\Shop.Model\obj\Debug\Shop.Model.dll
+C:\Users\Admin\Desktop\DKTech_Shop\DKTech_Shop\Shop.Model\obj\Debug\Shop.Model.pdb

@@ -1,4 +1,6 @@
-﻿using Shop.WebShop.Infrastructure.Core;
+﻿using Shop.Model.Models;
+using Shop.Service;
+using Shop.WebShop.Infrastructure.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,33 +10,84 @@ using System.Web.Http;
 
 namespace Shop.WebShop.Api
 {
+    [RoutePrefix("api/postcate")]
     public class PostCategoryController : ApiBaseController
     {
-        // GET: api/Test
-        public IEnumerable<string> Get()
+        IPostCategoryService _postCategoryService;
+        public PostCategoryController(IErrorService errorService, IPostCategoryService postCategoryService) : base(errorService)
         {
-            return new string[] { "value1", "value2" };
+            this._postCategoryService = postCategoryService;
         }
-
-        // GET: api/Test/5
-        public string Get(int id)
+        [Route("getall")]
+        public HttpResponseMessage Get(HttpRequestMessage request)
         {
-            return "value";
+            return CreateHttpResponse(request, () =>
+            {
+                var lstPostCate = _postCategoryService.GetAll();
+
+                HttpResponseMessage response = request.CreateResponse(HttpStatusCode.OK, lstPostCate);
+                return response;
+            });
         }
-
-        // POST: api/Test
-        public void Post([FromBody]string value)
+        [Route("add")]
+        public HttpResponseMessage Post(HttpRequestMessage request, PostCategory pc)
         {
+            return CreateHttpResponse(request, () =>
+            {
+                HttpResponseMessage response = null;
+                if (ModelState.IsValid)
+                {
+                    request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
+                }
+                else
+                {
+                    var postcate = _postCategoryService.Add(pc);
+                    _postCategoryService.Save();
+
+                    response = request.CreateResponse(HttpStatusCode.Created, postcate);
+                }
+                return response;
+            });
         }
-
-        // PUT: api/Test/5
-        public void Put(int id, [FromBody]string value)
+        [Route("edit")]
+        public HttpResponseMessage Put(HttpRequestMessage request, PostCategory pc)
         {
+            return CreateHttpResponse(request, () =>
+            {
+                HttpResponseMessage response = null;
+                if (ModelState.IsValid)
+                {
+                    request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
+                }
+                else
+                {
+                    _postCategoryService.Add(pc);
+                    _postCategoryService.Save();
+
+                    response = request.CreateResponse(HttpStatusCode.OK);
+                }
+                return response;
+            });
         }
-
-        // DELETE: api/Test/5
-        public void Delete(int id)
+        [Route("delete")]
+        public HttpResponseMessage Delete(HttpRequestMessage request, int id)
         {
+            return CreateHttpResponse(request, () =>
+            {
+                HttpResponseMessage response = null;
+                if (ModelState.IsValid)
+                {
+                    request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
+                }
+                else
+                {
+                    _postCategoryService.Delete(id);
+                    _postCategoryService.Save();
+
+                    response = request.CreateResponse(HttpStatusCode.OK);
+                }
+                return response;
+            });
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Shop.Data.Migrations
+namespace Shop.Data.Migrations
 {
     using System;
     using System.Data.Entity;
@@ -13,7 +13,6 @@
         }
 
         protected override void Seed(Shop.Data.Shop_DbContext context)
-            //Tạo dữ liệu mẫu ở đây
         {
             //  This method will be called after migrating to the latest version.
 
